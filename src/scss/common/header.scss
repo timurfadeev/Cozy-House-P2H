@@ -1,0 +1,22 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 7vh;
+	transition: padding 0.3s, background-color 0.3s, box-shadow 0.3s;
+	transition-timing-function: ease;
+	z-index: 100
+}
+
+.header.active {
+	padding-top: 6px !important;
+	background-color: rgba(46, 41, 38, 0.8);
+	box-shadow: 0px 12px 10px 10px rgba(46, 41, 38, 0.8)
+}
+
+.header__body {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto
+}
