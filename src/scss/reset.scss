@@ -13,7 +13,12 @@ table {
   border-collapse: collapse;
 }
 
-ul {
+hr {
+  border: none;
+}
+
+ul,
+li {
   list-style: none;
 }
 
@@ -42,4 +47,9 @@ button {
   overflow: hidden;
   cursor: pointer;
   outline: none;
+}
+
+section {
+  overflow-x: hidden;
+  width: 100%;
 }
