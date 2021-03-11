@@ -256,3 +256,62 @@
     }
   }
 }
+
+.section-help {
+  padding: 70px 0 80px;
+  overflow: hidden;
+}
+
+.help {
+  &__title {
+    text-align: center;
+    margin: 25px 20px 80px;
+    flex: 1 1 auto;
+    color: #545454;
+    font-family: Georgia, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -20px -80px;
+  }
+
+  &__column {
+    flex: 0 1 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__block-img {
+    margin-bottom: 20px;
+    flex: 1 1 auto;
+  }
+
+  &__text {
+    text-align: center;
+    color: #545454;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
+}
