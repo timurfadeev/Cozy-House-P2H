@@ -315,3 +315,89 @@
     letter-spacing: 1.2px;
   }
 }
+
+.section-donation {
+  width: 100%;
+  padding: 70px 0 80px;
+  background-color: #f6f6f6;
+}
+
+.donation {
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 -30px;
+  }
+
+  &__column {
+    max-width: 100%;
+    padding: 0 30px;
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    flex: 1 1 auto;
+    color: #545454;
+    font-family: Georgia, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
+
+  &__block-bank {
+    margin: 28px 0;
+  }
+
+  &__card-img {
+    transform: translateY(20%);
+    margin-right: 15px;
+  }
+
+  &__bank {
+    &-title {
+      color: #545454;
+      font-family: Georgia, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 7px;
+      letter-spacing: 0.9px;
+    }
+
+    &-link {
+      margin-top: 20px;
+      padding: 11px 15px;
+      border-radius: 8px;
+      background: #f1cdb3;
+      transition: 0.5s;
+      border: 2px solid transparent;
+
+      &:hover {
+        border: 2px solid #f1cdb3;
+        background: #fff;
+      }
+    }
+
+    &-number {
+      color: #292929;
+      font-family: "Times New Roman", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &__block-desq {
+    max-width: 350px;
+  }
+
+  &__desq {
+    color: #b2b2b2;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
