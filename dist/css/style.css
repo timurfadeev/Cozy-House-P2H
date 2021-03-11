@@ -4,61 +4,216 @@
   margin: 0 auto;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+button,
+input,
+p,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: #fafafa;
-  font-family: Arial, sans-serif;
+fieldset,
+img {
+  border: 0;
 }
 
-table {
-  border-collapse: collapse;
+img,
+object,
+embed {
+  vertical-align: bottom;
 }
 
-hr {
-  border: none;
+main {
+  display: block;
+  margin-bottom: 30px;
 }
 
-ul,
-li {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
+caption,
+th {
+  text-align: left;
 }
 
-a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+a * {
+  cursor: pointer;
   text-decoration: none;
 }
 
 input,
 textarea {
-  border: 0;
-  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  min-width: 320px;
+  position: relative;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+* {
   outline: none;
 }
 
-textarea {
-  resize: vertical;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-button {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  cursor: pointer;
-  outline: none;
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-section {
-  overflow-x: hidden;
+* ::-moz-selection {
+  background: #2600ff;
+  color: #fff;
+}
+
+* ::selection {
+  background: #2600ff;
+  color: #fff;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input.placeholder,
+textarea.placeholder {
+  color: #fff !important;
+}
+
+.wrapper {
+  display: table;
   width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  overflow: hidden;
+  position: relative;
 }
 
 .header {
@@ -300,7 +455,7 @@ section {
 }
 
 .pets__column {
-  padding: 0 22px;
+  padding: 0 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,4 +865,129 @@ section {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.2px;
+}
+
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.prev.slick-arrow {
+  left: 0;
+}
+
+.next.slick-arrow,
+.prev.slick-arrow {
+  top: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.next.slick-arrow {
+  right: 0;
 }
