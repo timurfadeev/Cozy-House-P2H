@@ -1,7 +1,7 @@
 $(".pets__row").slick({
   arrows: true,
   infinite: true,
-  autoplay: true,
+  // autoplay: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,

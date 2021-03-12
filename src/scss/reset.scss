@@ -25,17 +25,6 @@ td {
   padding: 0;
 }
 
-fieldset,
-img {
-  border: 0;
-}
-
-img,
-object,
-embed {
-  vertical-align: bottom;
-}
-
 main {
   display: block;
   margin-bottom: 30px;
@@ -90,15 +79,12 @@ textarea {
 
 [class^="icon-"],
 [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
