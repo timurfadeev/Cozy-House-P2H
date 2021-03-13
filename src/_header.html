@@ -2,32 +2,39 @@
   <div class="container">
     <div class="header__row">
       <div class="header__column">
-        <div class="header__logo header__item">
-          <div class="header__logo--title">Cozy House</div>
-          <div class="header__logo--desq">Shelter for pets in Boston</div>
+        <div class="header__logo header__logo-item">
+          <p class="header__logo-title">Cozy House</p>
+          <p class="header__logo-desq">Shelter for pets in Boston</p>
         </div>
       </div>
       <div class="header__column">
-        <nav class="header__nav">
+        <nav id="menu" class="header__item header__nav-burger">
           <ul class="header__list">
-            <li class="header__nav-item">
-              <a href="#" class="header__link nav__link--about"
+            <li class="header__list-item">
+              <a href=".section-about" class="header__link nav-link-about"
                 >About the shelter</a
               >
             </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__link nav__link--pets">Our pets</a>
+            <li class="header__list-item">
+              <a href=".section-pets" class="header__link nav-link-pets"
+                >Our pets</a
+              >
             </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__link nav__link--helper"
+            <li class="header__list-item">
+              <a href=".section-help" class="header__link nav-link-helper"
                 >To help the shelter</a
               >
             </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__link nav__link--contacts">Contacts</a>
+            <li class="header__list-item">
+              <a href="footer" class="header__link nav-link-contacts"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
+        <button class="burger">
+          <span class="burger__span"></span>
+        </button>
       </div>
     </div>
   </div>

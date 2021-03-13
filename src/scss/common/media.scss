@@ -1,37 +1,39 @@
 // section header
 @media screen and (max-width: 700px) {
   .header {
-    &__nav-item {
+    &__nav-burger {
       position: fixed;
       top: -100%;
       left: 0;
       width: 100%;
-      min-height: 100vh;
+      min-height: 100%;
       background-color: #2e2926;
       opacity: 0;
       padding-top: 90px;
-      overflow: auto;
-      display: flex;
       align-items: center;
       justify-content: center;
       transition: opacity 0.3s, top 0.3s;
-    }
-
-    &__link {
-      white-space: normal;
-      font-size: 32px;
     }
 
     &__list {
       text-align: center;
       flex-direction: column;
       overflow: auto;
+
+      &-item {
+        margin: 0;
+        margin-bottom: 30px;
+      }
     }
 
-    &__nav-item {
-      margin: 0;
-      margin-bottom: 30px;
+    &__link {
+      white-space: normal;
+      font-size: 32px;
     }
+  }
+
+  .burger {
+    display: block;
   }
 }
 
