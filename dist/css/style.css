@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 body,
 div,
 dl,
@@ -1110,6 +1114,7 @@ textarea.placeholder {
   }
 
   .header__list-item {
+    overflow: hidden;
     margin: 0;
     margin-bottom: 30px;
   }
