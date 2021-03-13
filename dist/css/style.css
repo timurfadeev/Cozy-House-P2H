@@ -938,6 +938,113 @@ textarea.placeholder {
           transform: translateY(-50%) scale(0);
 }
 
+.slick-slider {
+  position: relative;
+  max-width: 1040px;
+  padding: 0 65px;
+  margin: 0 auto;
+}
+
+.slick-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 0;
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.slick-arrow:hover {
+  background-color: #f1cdb3;
+}
+
+.slick-arrow.slick-prev {
+  background-image: url(../img/pets/icons/left.jpg);
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0;
+}
+
+.slick-arrow.slick-next {
+  background-image: url(../img/pets/icons/right.jpg);
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.slick-dots li:last-child {
+  margin: 0;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #f1cdb3;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: transparent;
+  border: 2px solid #545454;
+  font-size: 0;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  -o-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.slick-dots:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1300px) {
   .footer__row {
     margin: 0 -7.5px;
@@ -945,6 +1052,16 @@ textarea.placeholder {
 
   .footer__column {
     padding: 0 7.5px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .slick-slider {
+    padding: 0 15px;
+  }
+
+  .pets__row {
+    width: 800px;
   }
 }
 
@@ -1130,6 +1247,10 @@ textarea.placeholder {
 }
 
 @media screen and (max-width: 540px) {
+  .slick-dots li {
+    margin-right: 20px;
+  }
+
   .donation-img {
     width: 400px;
     height: 200px;

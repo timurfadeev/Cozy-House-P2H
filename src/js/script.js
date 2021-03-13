@@ -21,17 +21,44 @@ $(document).ready(function () {
       $(".burger,.header__nav-burger").toggleClass("active"),
         $("body").toggleClass("lock");
     }),
-    function a(e) {
-      $(".burger,.header__nav-burger").removeClass("active"),
-        $("body").removeClass("lock");
-      let n = Math.ceil($("." + e).offset().top) - 50;
-      $("html, body").animate(
+    $(".pets__row").slick({
+      lazyLoad: "ondemand",
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: !0,
+      autoplaySpeed: 2200,
+      lazyLoad: "ondemand",
+      responsive: [
         {
-          scrollTop: n,
+          breakpoint: 910,
+          settings: {
+            slidesToShow: 2,
+            arrows: !1,
+            dots: !0,
+          },
         },
-        500
-      );
-    };
+        {
+          breakpoint: 540,
+          settings: {
+            dots: !0,
+            slidesToShow: 1,
+            arrows: !1,
+          },
+        },
+      ],
+    });
+
+  function a(e) {
+    $(".burger,.header__nav-burger").removeClass("active"),
+      $("body").removeClass("lock");
+    let n = Math.ceil($("." + e).offset().top) - 50;
+    $("html, body").animate(
+      {
+        scrollTop: n,
+      },
+      500
+    );
+  }
 
   t(window.innerWidth),
     window.addEventListener("resize", function () {
